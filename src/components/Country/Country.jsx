@@ -1,16 +1,20 @@
-const Country = ({ country }) => {
+import styles from "./scss/Country.module.css";
+
+const Country = ({ country, toggleTheme }) => {
   return (
-    <article className="country">
+    <div className={styles.countryContainer} style={toggleTheme ? null : {backgroundColor: "#2b3743", color: "white"}}>
       <figure>
         <img src={country.flags.png} alt={country.flags.alt} />
       </figure>
-      <h1>{country.name.common}</h1>
-      <ul>
-        <li>Population: {country.population}</li>
-        <li>Region: {country.region}</li>
-        <li>Capital: {country.capital[0]}</li>
-      </ul>
-    </article>
+      <section className={styles.countryInfo} >
+        <h1>{country.name.common}</h1>
+        <ul>
+          <li><span>Population:</span> {country.population}</li>
+          <li><span>Region:</span> {country.region}</li>
+          <li><span>Capital:</span> {country.capital[0]}</li>
+        </ul>
+      </section>
+    </div>
   )
 }
 
