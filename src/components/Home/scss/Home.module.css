@@ -1,0 +1,22 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: #fafafa;
+}
+.mainContainer .countriesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .mainContainer .countriesContainer {
+    margin-top: 60px;
+    gap: 76px;
+  }
+}/*# sourceMappingURL=Home.module.css.map */

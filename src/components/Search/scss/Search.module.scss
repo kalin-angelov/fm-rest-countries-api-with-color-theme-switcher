@@ -1,0 +1,91 @@
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start
+}
+
+form {
+    @include flex();
+    gap: 30px;
+    width: 340px;
+
+    .searchBar {
+        @include flex();
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+
+        margin-top: 46px;
+        box-shadow: 0px 5px 5px -9px;
+        background-color: white;
+        border-radius: 10px;
+        width: inherit;
+        height: 44px;
+        padding: 0px 31px;
+        i {
+            color: #b4b4b4;
+        }
+        input {
+            border: unset;
+            width: 100%;
+            height: inherit;
+            &::placeholder {
+                color: #c5c5c5;
+            }
+        }
+    }
+
+    .filterMenu {
+        width: 220px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px -9px;
+        select {
+            width: 210px;
+            height: 44px;
+            border: unset;
+            padding: 0px 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            option {
+                font-size: 18px;
+                border-radius: 10px;
+                padding: 20px 0px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    form {
+        width: 685px;
+        height: 275px;
+        gap: 76px;
+
+        .searchBar {
+            padding: 0px 64px;
+            height: 100px;
+            input {
+                font-size: 26px;
+                &::placeholder {
+                    font-size: 21px;
+                }
+            }
+            i {
+                font-size: 38px;
+            }
+        }
+
+        .filterMenu {
+            width: 400px;
+            height: 100px;
+            select {
+                width: 355px;
+                height: inherit;
+                padding: 0px 48px;
+                font-size: 20px;
+            }
+        }
+    }
+}
