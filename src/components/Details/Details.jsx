@@ -18,7 +18,20 @@ const Details = () => {
             <li></li>
             <li></li>
             <li></li>
+            <li></li>
         </ul>
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <h2></h2>
+
+        <div>
+            <button></button><button></button><button></button>
+        </div>
       </div>
     </div>
   )
