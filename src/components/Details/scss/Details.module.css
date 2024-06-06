@@ -1,1 +1,16 @@
-/*# sourceMappingURL=Details.module.css.map */
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+.detailsContainer .borderCountries {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}/*# sourceMappingURL=Details.module.css.map */

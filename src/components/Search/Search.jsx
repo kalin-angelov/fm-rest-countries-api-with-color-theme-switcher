@@ -2,7 +2,6 @@ import styles from "./scss/Search.module.css";
 
 import { useEffect, useState } from "react";
 
-
 const Search = ({ toggleTheme }) => {
   const [dark, setDark] = useState(null);
 

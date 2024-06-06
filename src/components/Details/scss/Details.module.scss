@@ -1,0 +1,17 @@
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.detailsContainer {
+    @include flex();
+    gap: 15px;
+
+    .borderCountries {
+        @include flex ();
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
