@@ -13,7 +13,7 @@ const Header = ({ toggleTheme, setToggleTheme}) => {
                 onClick={handleToggle}
                 style={toggleTheme ? null : {backgroundColor: "#2b3743", color: "white"}}
             >
-                <i className={toggleTheme ? "fa-regular fa-moon" : "fa-solid fa-moon"} ></i>
+                <span><i className={toggleTheme ? "fa-regular fa-moon" : "fa-solid fa-moon"} ></i></span>
                 Dark Mode
             </button>
         </header>
