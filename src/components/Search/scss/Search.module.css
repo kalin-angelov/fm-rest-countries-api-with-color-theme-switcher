@@ -4,7 +4,6 @@
   align-items: start;
   justify-content: start;
   gap: 30px;
-  width: 340px;
 }
 .searchingInstruments form .searchBar {
   display: flex;
@@ -24,21 +23,21 @@
 }
 .searchingInstruments form .searchBar i {
   color: #b4b4b4;
-  font-family: 16px;
+  font-size: 16px;
 }
 .searchingInstruments form .searchBar input {
   border: unset;
   width: 100%;
   height: inherit;
-  font-family: 16px;
+  font-size: 16px;
 }
 .searchingInstruments form .searchBar input::-moz-placeholder {
   color: #c5c5c5;
-  font-family: 16px;
+  font-size: 16px;
 }
 .searchingInstruments form .searchBar input::placeholder {
   color: #c5c5c5;
-  font-family: 16px;
+  font-size: 16px;
 }
 .searchingInstruments .filterMenu {
   width: 220px;
@@ -54,7 +53,7 @@
   cursor: pointer;
 }
 .searchingInstruments .filterMenu .dropDownBtn span {
-  font-family: 16px;
+  font-size: 16px;
   padding: 0 10px;
 }
 .searchingInstruments .filterMenu .dropDownMenu {
