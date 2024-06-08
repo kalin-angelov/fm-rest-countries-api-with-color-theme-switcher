@@ -32,7 +32,7 @@ const FilterMenu = ({ dark, jsonDataBase, setDataBase }) => {
     };
 
     return (
-        <div className={styles.filterMenu} ref={ref} style={dark}>
+        <div className={styles.filterMenu} ref={ref}>
 
             <div className={styles.dropDownBtn} onClick={handleDropDown} style={dark}>
                 <span>{region} </span>  
