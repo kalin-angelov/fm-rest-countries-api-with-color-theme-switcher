@@ -34,7 +34,7 @@ const Details = () => {
         <h2>Border Countries:</h2>
         {countryInfo.borders ? 
           <div className={styles.borderCountries}>
-            {countryInfo.borders.map(border => <Borders key={border.name} border={border}/>)}
+            {countryInfo.borders.map(border => <Borders key={border} border={border}/>)}
           </div> : null
         }
       </div>
@@ -42,4 +42,4 @@ const Details = () => {
   )
 }
 
-export default Details
+export default Details;

@@ -2,17 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .mainContainer {
+    width: 100%;
+    min-height: 100dvh;
+    background-color: #fafafa;
+
     @include flex();
     gap: 40px;
-    background-color: #fafafa;
     
     .countriesContainer {
         @include flex();
-        gap: 40px;
+        justify-content: center;
     }
 }
 

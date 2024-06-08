@@ -12,15 +12,11 @@ import { Context } from "../../context/Context";
 
 
 const Home = ({ toggleTheme }) => {
-   const { dataBase, setDataBase, filterRegion } = useContext(Context);
+   const { dataBase, setDataBase } = useContext(Context);
 
-   useEffect(() => {
-    if (filterRegion.length !== 0) {
-        setDataBase(filterRegion);
-    } else {
+    useEffect(() => {
         setDataBase(jsonDataBase.slice(0,8));
-    }
-   },[]);
+    },[]);
 
     return (
         <main className={styles.mainContainer} style={toggleTheme ? null : {backgroundColor: "#202d36"}}>

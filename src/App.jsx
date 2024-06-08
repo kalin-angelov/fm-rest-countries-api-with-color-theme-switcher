@@ -13,13 +13,10 @@ import Details from "./components/Details/Details";
 function App() {
   const [toggleTheme, setToggleTheme] = useState(true);
   const [dataBase, setDataBase] = useState([]);
-  const [filterRegion, setFilterRegion] = useState([]);
 
   const initialValue = {
     dataBase,
     setDataBase,
-    filterRegion, 
-    setFilterRegion
   }
 
   return (

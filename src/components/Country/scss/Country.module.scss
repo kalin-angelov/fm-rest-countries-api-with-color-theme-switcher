@@ -6,6 +6,7 @@
     height: 350px;
     transition: transform .3s;
     cursor: pointer;
+    margin: 20px;
 
     &:hover {
         transform: scale(1.1);
@@ -30,6 +31,7 @@
         margin: 25px;
         h1 {
             font-weight: 800;
+            font-size: 20px;
         }
         ul {
             padding: 10px 0px;
