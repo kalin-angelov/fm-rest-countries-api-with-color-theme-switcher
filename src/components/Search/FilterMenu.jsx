@@ -11,7 +11,7 @@ const FilterMenu = ({ dark, jsonDataBase, setDataBase }) => {
         const closeDropDowMenu = (e) => {
             if (ref.current && !ref.current.contains(e.target)) {
                 setShowDropDown(false);
-            }
+            };
         };
 
         window.addEventListener("mousedown", closeDropDowMenu);
