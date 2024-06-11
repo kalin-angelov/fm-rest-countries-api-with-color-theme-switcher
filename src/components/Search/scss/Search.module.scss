@@ -101,33 +101,105 @@ $boxShadow: 0 5px 15px rgb(0, 0 , 0 , 0.1);
     }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 750px) {
     .searchingInstruments {
-        width: 685px;
-        height: 275px;
-        gap: 76px;
 
         form {
             .searchBar {
                 padding: 0px 64px;
+                width: 686px;
                 height: 100px;
                 input {
-                    font-size: 26px;
+                    font-size: 28px;
                     &::placeholder {
-                        font-size: 21px;
+                        font-size: 28px;
                     }
                 }
                 i {
-                    font-size: 38px;
+                    font-size: 36px;
+                }
+            }
+        }
+
+        .filterMenu {
+            .dropDownBtn {
+                width: 400px;
+                height: 97px;
+                padding: 0 35px;
+                span {
+                    font-size: 30px;
+                }
+            }
+        
+            .dropDownMenu {
+                width: 400px;
+            }
+        
+            .dropDownMenuOpen  {
+                width: 400px;
+                height: 290px;
+                padding: 37px 22px;
+                .item {
+                    padding: 0;
+                    padding-bottom: 5px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1310px) {
+    .searchingInstruments {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 45px;
+
+        padding: 0 80px;
+        width: 100%;
+
+        form {
+            .searchBar {
+                margin: 0px;
+                padding: 0px 30px;
+                width: 482px;
+                height: 57px;
+                input {
+                    font-size: 18px;
+                    &::placeholder {
+                        font-size: 18px;
+                    }
+                }
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .filterMenu {
+            
+            .dropDownBtn {
+                width: 200px;
+                height: 57px;
+                padding: 20px;
+                span {
+                    font-size: 16px;
                 }
             }
     
             .dropDownMenu {
-                width: 400px;
-                height: 100px;
-                select {
-                    width: 355px;
-                    height: inherit;
+                width: 200px;
+                height: 57px;
+            }
+
+            .dropDownMenuOpen  {
+               width: 200px;
+               height: 160px;
+               padding: 0;
+                .item {
+                    padding: 5px 25px;
+                    font-size: 16px;
                 }
             }
         }

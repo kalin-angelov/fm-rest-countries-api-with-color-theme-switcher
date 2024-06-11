@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Context } from "./context/Context";
 
@@ -13,11 +13,23 @@ import Details from "./components/Details/Details";
 function App() {
   const [toggleTheme, setToggleTheme] = useState(true);
   const [dataBase, setDataBase] = useState([]);
+  const [dark, setDark] = useState(null);
 
   const initialValue = {
     dataBase,
     setDataBase,
-  }
+    dark,
+    toggleTheme
+  };
+
+  useEffect(() => {
+    if (toggleTheme === false) {
+      setDark({background: "#2b3743", color: "white"})
+    } else {
+      setDark(null);
+    };
+
+  },[toggleTheme]);
 
   return (
     <>

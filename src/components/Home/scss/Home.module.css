@@ -16,7 +16,12 @@
 
 @media screen and (min-width: 768px) {
   .mainContainer .countriesContainer {
-    margin-top: 60px;
-    gap: 76px;
+    gap: 75px;
+  }
+}
+@media screen and (min-width: 1310px) {
+  .mainContainer .countriesContainer {
+    display: grid;
+    grid-template-columns: 265px 265px 265px 265px;
   }
 }/*# sourceMappingURL=Home.module.css.map */

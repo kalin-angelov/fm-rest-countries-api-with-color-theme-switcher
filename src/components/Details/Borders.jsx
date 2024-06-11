@@ -4,7 +4,7 @@ import countriesDb from "../../db/data.json";
 
 import { useNavigate } from "react-router-dom";
 
-const Borders = ({ border }) => {
+const Borders = ({ border, dark }) => {
   const navigate = useNavigate();
   const borderCountry = countriesDb.find(country => country.alpha3Code === border);
   
@@ -13,7 +13,7 @@ const Borders = ({ border }) => {
   };
 
   return (
-    <button onClick={onClick} className={styles.borderButton}>{borderCountry.name}</button>
+    <button onClick={onClick} className={styles.borderBtn} style={dark}>{borderCountry.name}</button>
   );
 };
 

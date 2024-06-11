@@ -1,6 +1,6 @@
 import styles from "./scss/Search.module.css";
 
-import { useEffect, useState, useContext } from "react";
+import { useContext } from "react";
 
 import { Context } from "../../context/Context";
 
@@ -9,18 +9,8 @@ import FilterMenu from "./FilterMenu";
 
 import jsonDataBase from "../../db/data.json";
 
-const Search = ({ toggleTheme }) => {
-  const { setDataBase } = useContext(Context);
-  const [dark, setDark] = useState(null);
-  
-  useEffect(() => {
-    if (toggleTheme === false) {
-      setDark({background: "#2b3743", color: "white"})
-    } else {
-      setDark(null);
-    };
-
-  },[toggleTheme]);
+const Search = () => {
+  const { setDataBase, dark } = useContext(Context);
 
   return (
     <div className={styles.searchingInstruments}>

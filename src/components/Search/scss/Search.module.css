@@ -102,34 +102,92 @@
   background-color: #aaaaaa;
 }
 
-@media screen and (min-width: 760px) {
-  .searchingInstruments {
-    width: 685px;
-    height: 275px;
-    gap: 76px;
-  }
+@media screen and (min-width: 750px) {
   .searchingInstruments form .searchBar {
     padding: 0px 64px;
+    width: 686px;
     height: 100px;
   }
   .searchingInstruments form .searchBar input {
-    font-size: 26px;
+    font-size: 28px;
   }
   .searchingInstruments form .searchBar input::-moz-placeholder {
-    font-size: 21px;
+    font-size: 28px;
   }
   .searchingInstruments form .searchBar input::placeholder {
-    font-size: 21px;
+    font-size: 28px;
   }
   .searchingInstruments form .searchBar i {
-    font-size: 38px;
+    font-size: 36px;
   }
-  .searchingInstruments form .dropDownMenu {
+  .searchingInstruments .filterMenu .dropDownBtn {
     width: 400px;
-    height: 100px;
+    height: 97px;
+    padding: 0 35px;
   }
-  .searchingInstruments form .dropDownMenu select {
-    width: 355px;
-    height: inherit;
+  .searchingInstruments .filterMenu .dropDownBtn span {
+    font-size: 30px;
+  }
+  .searchingInstruments .filterMenu .dropDownMenu {
+    width: 400px;
+  }
+  .searchingInstruments .filterMenu .dropDownMenuOpen {
+    width: 400px;
+    height: 290px;
+    padding: 37px 22px;
+  }
+  .searchingInstruments .filterMenu .dropDownMenuOpen .item {
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1310px) {
+  .searchingInstruments {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding: 0 80px;
+    width: 100%;
+  }
+  .searchingInstruments form .searchBar {
+    margin: 0px;
+    padding: 0px 30px;
+    width: 482px;
+    height: 57px;
+  }
+  .searchingInstruments form .searchBar input {
+    font-size: 18px;
+  }
+  .searchingInstruments form .searchBar input::-moz-placeholder {
+    font-size: 18px;
+  }
+  .searchingInstruments form .searchBar input::placeholder {
+    font-size: 18px;
+  }
+  .searchingInstruments form .searchBar i {
+    font-size: 20px;
+  }
+  .searchingInstruments .filterMenu .dropDownBtn {
+    width: 200px;
+    height: 57px;
+    padding: 20px;
+  }
+  .searchingInstruments .filterMenu .dropDownBtn span {
+    font-size: 16px;
+  }
+  .searchingInstruments .filterMenu .dropDownMenu {
+    width: 200px;
+    height: 57px;
+  }
+  .searchingInstruments .filterMenu .dropDownMenuOpen {
+    width: 200px;
+    height: 160px;
+    padding: 0;
+  }
+  .searchingInstruments .filterMenu .dropDownMenuOpen .item {
+    padding: 5px 25px;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=Search.module.css.map */

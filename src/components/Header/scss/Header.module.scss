@@ -25,19 +25,37 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 750px) {
     .headerContainer {
         height: 160px;
-        padding: 0px 30px;
+        padding: 0px 32px;
 
         h1 {
-            font-size: 25px;
+            font-size: 28px;
         }
 
         button {
-            font-size: 18px;
+            font-size: 24px;
             i {
-                font-size: 20px;
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1310px) {
+    .headerContainer {
+        height: 80px;
+        padding: 0px 80px;
+
+        h1 {
+            font-size: 26px;
+        }
+
+        button {
+            font-size: 19px;
+            i {
+                font-size: 21px;
             }
         }
     }
