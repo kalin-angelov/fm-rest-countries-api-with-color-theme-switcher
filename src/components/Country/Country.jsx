@@ -2,7 +2,7 @@ import styles from "./scss/Country.module.css";
 
 import { useNavigate } from "react-router-dom";
 
-const CountryDb = ({ country, toggleTheme }) => {
+const Country = ({ country, dark }) => {
   const navigate = useNavigate();
 
   const navigateTo = () => {
@@ -12,7 +12,7 @@ const CountryDb = ({ country, toggleTheme }) => {
   }
 
   return (
-    <div className={styles.countryContainer} onClick={navigateTo} title={`Click to see full details for ${country.name}`} style={toggleTheme ? null : {backgroundColor: "#2b3743", color: "white"}}>
+    <div className={styles.countryContainer} onClick={navigateTo} title={`Click to see full details for ${country.name}`} style={dark ? dark : null}>
       <figure>
         <img src={country.flags.png} alt={country.flags.alt} />
       </figure>
@@ -28,4 +28,4 @@ const CountryDb = ({ country, toggleTheme }) => {
   )
 }
 
-export default CountryDb;
+export default Country;

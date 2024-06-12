@@ -11,33 +11,32 @@ import Header from "./components/Header/Header";
 import Details from "./components/Details/Details";
 
 function App() {
-  const [toggleTheme, setToggleTheme] = useState(true);
   const [dataBase, setDataBase] = useState([]);
-  const [dark, setDark] = useState(null);
+  const [dark, setDark] = useState();
 
   const initialValue = {
     dataBase,
     setDataBase,
     dark,
-    toggleTheme
+    setDark
   };
 
   useEffect(() => {
-    if (toggleTheme === false) {
-      setDark({background: "#2b3743", color: "white"})
-    } else {
-      setDark(null);
-    };
-
-  },[toggleTheme]);
+    setDark(
+      localStorage.getItem("dark") ? 
+      JSON.parse(localStorage.getItem("dark"))
+      :
+      null
+    );
+  },[]);
 
   return (
     <>
       <Context.Provider value={initialValue}>
-        <Header toggleTheme={toggleTheme} setToggleTheme={setToggleTheme}/>
+        <Header />
         <Routes>
           <Route path="*" element={<NotFound />} />
-          <Route path="/" element={<Home toggleTheme={toggleTheme} />} />
+          <Route path="/" element={<Home />} />
           <Route path="/details/:name" element={<Details />} />
         </Routes>
       </Context.Provider>

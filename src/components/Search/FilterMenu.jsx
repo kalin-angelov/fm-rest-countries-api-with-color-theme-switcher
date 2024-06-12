@@ -34,12 +34,12 @@ const FilterMenu = ({ dark, jsonDataBase, setDataBase }) => {
     return (
         <div className={styles.filterMenu} ref={ref}>
 
-            <div className={styles.dropDownBtn} onClick={handleDropDown} style={dark}>
+            <div className={styles.dropDownBtn} onClick={handleDropDown} style={dark ? dark : null}>
                 <span>{region} </span>  
                 <span><i className="fa-solid fa-caret-down"></i></span>
             </div>
 
-            <div className={!showDropDown ? styles.dropDownMenu : styles.dropDownMenuOpen }  style={dark}>
+            <div className={!showDropDown ? styles.dropDownMenu : styles.dropDownMenuOpen }  style={dark ? dark : null}>
                 <div className={styles.item} onClick={(e) => handleFiltering(e)}>Africa</div>
                 <div className={styles.item} onClick={(e) => handleFiltering(e)}>America</div>
                 <div className={styles.item} onClick={(e) => handleFiltering(e)}>Asia</div>

@@ -13,7 +13,7 @@ const Borders = ({ border, dark }) => {
   };
 
   return (
-    <button onClick={onClick} className={styles.borderBtn} style={dark}>{borderCountry.name}</button>
+    <button onClick={onClick} className={styles.borderBtn} title={borderCountry.name} style={dark}>{borderCountry.name}</button>
   );
 };
 

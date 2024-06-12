@@ -26,14 +26,14 @@ const SearchBar = ({ dark, jsonDataBase, setDataBase }) => {
 
     return (
         <form onSubmit={onSubmit} onKeyDown={onClickEsc}>
-            <div className={styles.searchBar} style={dark}>
+            <div className={styles.searchBar} style={dark ? dark : null}>
                 <span><i className="fa-solid fa-magnifying-glass"></i></span>
                 <input 
                     type="text" 
                     placeholder="Search for a country..." 
                     value={value} 
                     onChange={(e) => {setValue(e.target.value)}} 
-                    style={dark}
+                    style={dark ? dark : null}
                 />
             </div>
         </form>

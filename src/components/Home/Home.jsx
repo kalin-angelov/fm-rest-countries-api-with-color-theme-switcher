@@ -10,24 +10,23 @@ import GoUpButton from "../GoUpButton/GoUpButton";
 
 import { Context } from "../../context/Context";
 
-
-const Home = ({ toggleTheme }) => {
-   const { dataBase, setDataBase } = useContext(Context);
+const Home = () => {
+   const { dataBase, setDataBase, dark } = useContext(Context);
 
     useEffect(() => {
         setDataBase(jsonDataBase.slice(0,8));
     },[]);
 
     return (
-        <main className={styles.mainContainer} style={toggleTheme ? null : {backgroundColor: "#202d36"}}>
-            <Search toggleTheme={toggleTheme}/>
+        <main className={styles.mainContainer} style={dark ? {backgroundColor: "#202d36"} : null}>
+            <Search />
             <div className={styles.countriesContainer}>
                 {
                     dataBase.map(country => 
                         <Country 
                             key={country.population} 
                             country={country}
-                            toggleTheme={toggleTheme}
+                            dark={dark}
                         />)
                 }
             </div>
