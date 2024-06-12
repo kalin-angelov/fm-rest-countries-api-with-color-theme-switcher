@@ -23,7 +23,8 @@
 .detailsContainer {
     background-color: #fafafa;
     padding: 0 28px;
-
+    min-height: 100dvh;
+    
     .backBtn {
         @include button-375();
         margin: 55px 0;
@@ -152,7 +153,6 @@
     .detailsContainer {
         background-color: #fafafa;
         padding: 0 77px 30px 77px;
-        min-height: 100dvh;
     
         .backBtn {
             width: 140px;
@@ -191,6 +191,7 @@
                 .countryName {
                     grid-area: header;
                     font-size: 20px;
+                    margin: 0;
                 }
         
                 .ulOne {

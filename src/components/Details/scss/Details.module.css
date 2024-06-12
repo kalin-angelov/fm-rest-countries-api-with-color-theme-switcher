@@ -1,6 +1,7 @@
 .detailsContainer {
   background-color: #fafafa;
   padding: 0 28px;
+  min-height: 100dvh;
 }
 .detailsContainer .backBtn {
   width: 100px;
@@ -112,7 +113,6 @@
   .detailsContainer {
     background-color: #fafafa;
     padding: 0 77px 30px 77px;
-    min-height: 100dvh;
   }
   .detailsContainer .backBtn {
     width: 140px;
@@ -145,6 +145,7 @@
   .detailsContainer .countryDetails article .countryName {
     grid-area: header;
     font-size: 20px;
+    margin: 0;
   }
   .detailsContainer .countryDetails article .ulOne {
     grid-area: detailsOne;

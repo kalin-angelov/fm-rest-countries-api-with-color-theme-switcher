@@ -23,7 +23,7 @@ const Details = () => {
         </figure>
 
         <article>
-          <h1 className={styles.countyName}>{countryInfo.name}</h1>
+          <h1 className={styles.countryName}>{countryInfo.name}</h1>
           <ul className={styles.ulOne}>
             <li><span>Native Name:</span> {countryInfo.nativeName}</li>
             <li><span>Population:</span> {countryInfo.population}</li>
