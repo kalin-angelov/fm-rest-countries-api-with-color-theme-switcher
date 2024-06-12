@@ -64,7 +64,6 @@ $boxShadow: 0 5px 15px rgb(0, 0 , 0 , 0.1);
     
 
     .filterMenu {
-        width: 220px;
         
         .dropDownBtn {
             display: flex;
@@ -149,7 +148,7 @@ $boxShadow: 0 5px 15px rgb(0, 0 , 0 , 0.1);
     }
 }
 
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1024px) {
     .searchingInstruments {
         flex-direction: row;
         align-items: center;

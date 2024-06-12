@@ -28,7 +28,7 @@
   justify-self: center;
   margin: 25px;
 }
-.countryContainer .countryInfo h1 {
+.countryContainer .countryInfo p {
   font-weight: 800;
   font-size: 20px;
 }
@@ -55,7 +55,7 @@
   .countryContainer .countryInfo {
     margin: 60px 0px 0px 45px;
   }
-  .countryContainer .countryInfo h1 {
+  .countryContainer .countryInfo p {
     font-size: 30px;
     margin-bottom: 35px;
   }
@@ -66,7 +66,7 @@
     font-size: 28px;
   }
 }
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1024px) {
   .countryContainer {
     width: 265px;
     height: 340px;
@@ -84,7 +84,7 @@
   .countryContainer .countryInfo {
     margin: 0 24px;
   }
-  .countryContainer .countryInfo h1 {
+  .countryContainer .countryInfo p {
     font-size: 20px;
     margin: 30px 0 8px 0;
   }

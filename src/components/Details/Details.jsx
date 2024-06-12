@@ -15,7 +15,7 @@ const Details = () => {
   return (
     <div className={styles.detailsContainer} style={dark ? {backgroundColor: "#202d36", color: "white"} : null}>
       
-      <button className={styles.backBtn} onClick={() => navigate("/")} style={dark}><i className="fa-solid fa-arrow-left"></i>Back</button>
+      <button className={styles.backBtn} onClick={() => navigate(-1)} style={dark}><i className="fa-solid fa-arrow-left"></i>Back</button>
       
       <div className={styles.countryDetails}>
         <figure>

@@ -19,7 +19,13 @@
     gap: 75px;
   }
 }
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1024px) {
+  .mainContainer .countriesContainer {
+    display: grid;
+    grid-template-columns: 265px 265px 265px;
+  }
+}
+@media screen and (min-width: 1440px) {
   .mainContainer .countriesContainer {
     display: grid;
     grid-template-columns: 265px 265px 265px 265px;

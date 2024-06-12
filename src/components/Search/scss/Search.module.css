@@ -39,9 +39,6 @@
   color: #c5c5c5;
   font-size: 16px;
 }
-.searchingInstruments .filterMenu {
-  width: 220px;
-}
 .searchingInstruments .filterMenu .dropDownBtn {
   display: flex;
   flex-direction: row;
@@ -142,7 +139,7 @@
     font-size: 30px;
   }
 }
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1024px) {
   .searchingInstruments {
     flex-direction: row;
     align-items: center;
