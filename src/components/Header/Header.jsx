@@ -24,8 +24,12 @@ const Header = () => {
                 onClick={handleToggle}
                 style={dark ? dark : null}
             >
-                <span><i className={dark ? "fa-regular fa-moon" : "fa-solid fa-moon"} ></i></span>
-                Dark Mode
+                { dark ? 
+                    <span><i className="fa-regular fa-sun"></i>Light Mode</span>
+                    :
+                    <span><i className="fa-regular fa-moon"></i>Dark Mode</span>
+                }
+                
             </button>
         </header>
     );
