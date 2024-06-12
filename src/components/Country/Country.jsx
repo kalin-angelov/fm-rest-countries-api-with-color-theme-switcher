@@ -14,7 +14,7 @@ const Country = ({ country, dark }) => {
   return (
     <div className={styles.countryContainer} onClick={navigateTo} title={`Click to see full details for ${country.name}`} style={dark ? dark : null}>
       <figure>
-        <img src={country.flags.png} alt={country.name} />
+        <img src={country.flags.png} alt={`${country.name} flag`} />
       </figure>
       <section className={styles.countryInfo} >
         <h1>{country.name}</h1>
